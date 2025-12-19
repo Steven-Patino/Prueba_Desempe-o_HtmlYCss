@@ -1,0 +1,139 @@
+/* RESET GLOBAL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #4D4D4D;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ENCABEZADO */
+.encabezado {
+    background: white;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.encabezado-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.boton-nav {
+    text-decoration: none;
+    color: #18191F;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.boton-nav:hover { color: #4CAF4F; }
+
+/* SECCIONES GENERALES */
+section {
+    padding: 40px 5%;
+}
+
+button, .Button {
+    background-color: #4CAF4F;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* HERO SECTION */
+.Hero-Section {
+    display: flex;
+    flex-direction: column-reverse; /* Imagen arriba en móvil */
+    align-items: center;
+    text-align: center;
+    background-color: #F5F7FA;
+    gap: 2rem;
+}
+
+.row_1 { font-size: 32px; font-weight: 600; line-height: 1.2; }
+.row_2 { color: #4CAF4F; }
+.row_3 { font-size: 14px; color: #717171; margin: 20px 0; }
+
+/* CLIENTS & COMMUNITY */
+.Clients-Section, .Community-Intro {
+    text-align: center;
+}
+
+.Section_Title { font-size: 28px; margin-bottom: 10px; }
+
+.Frame-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+/* UNLOCK & COSTUMERS */
+.Unlock, .Costumers {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.Costumers { background-color: #F5F7FA; }
+
+.Name { color: #4CAF4F; font-weight: 600; margin-top: 15px; }
+
+/* FOOTER */
+footer {
+    padding: 40px;
+    background-color: #263238;
+    color: white;
+    text-align: center;
+}
+
+/* --- MEDIA QUERIES (TABLETS Y PC) --- */
+
+/* Tablets (768px o más) */
+@media (min-width: 768px) {
+    .encabezado-nav { flex-direction: row; justify-content: space-between; }
+    
+    .Hero-Section { flex-direction: row; text-align: left; padding: 80px 10%; }
+    .Frame-1 { width: 60%; }
+    .row_1 { font-size: 48px; }
+
+    .Frame-4 { flex-direction: row; justify-content: space-around; }
+    .Member-card { width: 30%; }
+
+    .Unlock, .Costumers { flex-direction: row; padding: 60px 10%; }
+    .Frame-35, .Image-9, .Frame-6, .Frame-11 { width: 50%; }
+}
+
+/* Desktop Grande (1200px o más) */
+@media (min-width: 1200px) {
+    section { padding: 80px 15%; }
+}
